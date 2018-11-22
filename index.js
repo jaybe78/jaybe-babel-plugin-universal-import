@@ -225,10 +225,12 @@ module.exports = function universalImportPlugin({ types: t, template }) {
 
         const importArgNode = getImportArgPath(p).node
         t.existingChunkName = existingMagicCommentChunkName(importArgNode)
+
         // no existing chunkname, no problem - we will reuse that for fixing nested chunk names
         if (!t.existingChunkName) {
           t.existingChunkName = checkForNestedChunkName(importArgNode)
         }
+        console.log(t.existingChunkName)
         const universalImport = getImport(p, IMPORT_UNIVERSAL_DEFAULT)
 
         // if being used in an await statement, return load() promise
@@ -267,7 +269,7 @@ module.exports = function universalImportPlugin({ types: t, template }) {
 
         const func = t.callExpression(universalImport, [options])
         delete t.existingChunkName
-        p.parentPath.replaceWith(func)
+        //p.parentPath.replaceWith(func)
       }
     }
   }
