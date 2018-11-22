@@ -1,6 +1,6 @@
 {
   "name": "jaybe-babel-plugin-universal-import",
-  "version": "3.1.2",
+  "version": "1.0.0",
   "description": "Babel plugin to transform import() into its Universal counterpart",
   "main": "index.js",
   "repository": {

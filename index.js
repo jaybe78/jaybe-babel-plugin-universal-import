@@ -217,7 +217,7 @@ module.exports = function universalImportPlugin({ types: t, template }) {
   )
 
   return {
-    name: 'universal-import',
+    name: 'jaybe-universal-import',
     visitor: {
       Import(p) {
         if (p[visited]) return
