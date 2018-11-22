@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 module.exports = function(config, makeThennable) {
-  if (makeThennable === false) return config
+  /*if (makeThennable === false) return config
 
   var load = config.load
   config.then = function(cb) {
@@ -13,7 +13,7 @@ module.exports = function(config, makeThennable) {
     return load().catch(function(e) {
       return cb && cb(e)
     })
-  }
+  }*/
   return config
 }
 
