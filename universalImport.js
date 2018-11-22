@@ -26,10 +26,10 @@ function setHasPlugin() {
 
   try {
     if (isWebpack) {
-      var weakId = require.resolveWeak('react-universal-component')
+      var weakId = require.resolveWeak('jaybe-react-universal-component')
       universal = __webpack_require__(weakId)
     } else {
-      universal = module.require('react-universal-component')
+      universal = module.require('jaybe-react-universal-componentt')
     }
 
     if (universal) {
