@@ -18,7 +18,7 @@ const visited = Symbol('visited')
 
 const IMPORT_UNIVERSAL_DEFAULT = {
   id: Symbol('universalImportId'),
-  source: 'babel-plugin-universal-import/universalImport',
+  source: 'babel-plugin-jay-universal-import/universalImport',
   nameHint: 'universalImport'
 }
 
